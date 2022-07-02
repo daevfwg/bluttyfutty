@@ -1,6 +1,6 @@
 using UnityEngine;
 
-class methodPractice : MonoBehaviour
+class MethodPractice : MonoBehaviour
 {
     [SerializeField] float a;
     [SerializeField] float b;
@@ -14,7 +14,7 @@ class methodPractice : MonoBehaviour
     {
         min = Mathf.Min(a, b);
         max = Mathf.Max(a, b);
-        abs = Mathf.Abs(a, b);
+        abs = Mathf.Abs(a);
         power = Mathf.Pow(a, b);
     }
 }

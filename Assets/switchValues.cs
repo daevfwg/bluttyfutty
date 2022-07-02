@@ -1,13 +1,14 @@
-
 using UnityEngine;
 
-class switchValues : MonoBehaviour
+public class SwitchValues : MonoBehaviour
 {
-    [SerializeField] int num1;
-    [SerializeField] int num2;
+    [SerializeField] string num1;
+    [SerializeField] string num2;
+
     void Start()
     {
-        int t = num1;
+        // Megcserel
+        string t = num1;
         num1 = num2;
         num2 = t;
     }

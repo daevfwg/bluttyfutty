@@ -1,21 +1,18 @@
-
 using UnityEngine;
 
-class circle : MonoBehaviour
+class Circle : MonoBehaviour
 {
-    [Header("Input Numbers")]
     [SerializeField] float radius;
-    [SerializeField] float pi;
-    [Space]
-    [Header("Output Numbers")]
-    [SerializeField] float area;
-    [SerializeField] float circumference;
+
+    [SerializeField] float circumferance; // Kerulet
+    [SerializeField] float area;          // Terulet
+
+    float pi = 3.14f;
 
     void OnValidate()
     {
+
+        circumferance = 2 * radius * Mathf.PI;
         area = radius * radius * Mathf.PI;
-        circumference = 2 * radius * Mathf.PI;
-
     }
-
 }

@@ -1,13 +1,12 @@
-
 using UnityEngine;
 
-class calculator : MonoBehaviour
+public class Calculator : MonoBehaviour
 {
-    [Header ("Input Numbers")]
+    [Header("Input Numbers")]
     [SerializeField] float num1;
     [SerializeField] float num2;
     [Space]
-    [Header ("Output Numbers")]
+    [Header("Output Numbers")]
     [SerializeField] float summa;
     [SerializeField] float difference;
     [SerializeField] float product;
@@ -19,7 +18,5 @@ class calculator : MonoBehaviour
         difference = num1 - num2;
         product = num1 * num2;
         rate = num1 / num2;
-
     }
-
 }
